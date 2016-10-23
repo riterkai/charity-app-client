@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ebffcc">
+	<include 
+	    android:id="@+id/title"
+	    layout="@layout/title"
+	    />
+    <LinearLayout
+        android:id="@+id/sss"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/squa_edit"
+        android:layout_below="@id/title"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relTitleOne"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center"
+                android:text="个人资料"
+                android:textSize="13dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#A9A9A9" />
+
+        <RelativeLayout
+            android:id="@+id/relTitleTwo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="0.5dip"
+                android:gravity="center"
+                android:text="我的活动"
+                android:textSize="13dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#A9A9A9" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/relTitleThree"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center"
+                android:text="谁收藏我"
+                android:textSize="13dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#A9A9A9" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/relTitleFour"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center"
+                android:text="我收藏谁"
+                android:textSize="13dip" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#A9A9A9" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/relTitleFive"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="1dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dip"
+                android:gravity="center"
+                android:text="收藏活动"
+                android:textSize="13dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sss"
+        android:layout_marginTop="10dip" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebffcc"
+     >
+
+    <RelativeLayout 
+        android:id="@+id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg"
+        >
+        <Button 
+            android:id="@+id/action_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/top_two_rel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_below="@id/top_rel" >
+
+        <ImageView
+            android:id="@+id/action_user_head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default1" />
+
+        <TextView
+            android:id="@+id/action_user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/action_user_head_img"
+            android:text="为人名服务"
+            android:textSize="14sp" />
+    </RelativeLayout> 
+    <ImageView 
+        android:id="@+id/hd_img"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/default1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/top_two_rel"
+        />
+    <RelativeLayout
+        android:id="@+id/action_name_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/hd_img" >
+
+        <TextView
+            android:id="@+id/hd_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="为人名服务"
+            android:textSize="14sp" />
+        <Button
+            android:padding="5dp"
+            android:id="@+id/hd_edit_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/action_edit" />
+
+         <Button
+             android:id="@+id/hd_share"
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="64dp"
+             android:text="分享"             
+             android:padding="5dp" />
+
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/hd_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="時間：2014-8-6——2014-8-9"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/action_name_rel"
+        android:layout_marginTop="10dp"
+        />
+    <TextView 
+        android:id="@+id/hd_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地點：中國河南省駐馬店市中國人民解放軍"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/hd_date_tv"
+        android:layout_marginTop="10dp"
+        />
+    <TextView 
+        android:id="@+id/hd_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活動內容：中國河南省駐馬店市中國人民解放軍"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/hd_address_tv"
+        android:layout_marginTop="10dp"
+        />
+     <ImageView
+        android:id="@+id/marker_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/hd_img"
+        android:layout_below="@+id/hd_date_tv"
+        android:src="@drawable/marker" />
+    
+
+</RelativeLayout>

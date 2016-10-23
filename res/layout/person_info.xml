@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/action_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/collect_view_selector" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/title_right"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_top"
+        android:background="#ebffcc" >
+
+   <TextView 
+       android:id="@+id/line_one"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+	    android:layout_marginTop="10dp"
+       android:background="#d9d9d9"
+       />
+	<RelativeLayout 
+	    android:id="@+id/person_info_rel"
+	    android:layout_width="match_parent"
+	    android:layout_height="120dp"
+	    android:layout_below="@id/line_one"
+	    android:layout_marginTop="10dp"
+	    >
+	    <ImageView 
+	        android:id="@+id/person_head_img"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:scaleType="fitXY"
+	        android:background="@drawable/ic_launcher"
+	        />
+	    <EditText 
+	        android:id="@+id/person_name_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#494949"
+	        android:text="愛心之家"
+	        android:layout_toRightOf="@id/person_head_img"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="15dp"
+	        android:background="@null"
+	        />
+	    <EditText 
+	        android:id="@+id/person_address_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#494949"
+	        android:text="愛心之家"
+	        android:layout_toRightOf="@id/person_head_img"
+	        android:layout_marginLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:selectAllOnFocus="true"
+	        android:background="@null"
+	        />
+	    <TextView 
+	        android:id="@+id/tel_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	         android:textSize="16sp"
+	        android:textColor="#494949"
+	        android:layout_toRightOf="@id/person_head_img"
+	        android:layout_marginLeft="10dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="15dp"
+	         android:text="Tel:"
+	        />
+	    <EditText 
+	        android:id="@+id/person_tel_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="#494949"
+	        android:text="150603255"
+	        android:layout_toRightOf="@id/tel_text"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="15dp"
+	        android:background="@null"
+	        />
+
+	    <ImageView
+	        android:id="@+id/marker_img"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="14dp"
+	        android:src="@drawable/marker" />
+	    
+	</RelativeLayout>
+	<TextView 
+       android:id="@+id/line_two"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+	    android:layout_marginTop="10dp"
+       android:background="#d9d9d9"
+       android:layout_below="@id/person_info_rel"
+       />
+	<TextView 
+       android:id="@+id/intro"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+       android:textColor="#494949"
+       android:layout_below="@id/line_two"
+       android:text="簡介:"
+       android:textSize="18sp"
+       />
+	<EditText 
+	    android:id="@+id/intro_edit"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginBottom="20dp"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/squa_edit"
+	    android:layout_below="@id/intro"
+	    android:text="中國人名解放軍"
+	    android:gravity="top"
+	    android:textSize="16sp"
+	    android:textColor="#494949"
+	    />
+	
+
+</RelativeLayout>
+    
+
+</RelativeLayout>

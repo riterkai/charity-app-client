@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#ebffcc" >
+    
+    <RelativeLayout
+        android:id="@+id/top_two_rel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/top_rel" >
+
+        <ImageView
+            android:id="@+id/action_user_head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default1" />
+
+        <TextView
+            android:id="@+id/action_user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/action_user_head_img"
+            android:text="为人名服务"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/action_user_name_text"
+            android:layout_alignBottom="@+id/action_user_name_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:text="为人名安安"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hd_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/top_two_rel"
+        android:layout_marginTop="5dp"
+        android:text="活动名称"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/hd_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hd_name_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="活动地点"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/hd_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hd_address_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="活动时间日期：2014-8-6——2014-8-9"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/hd_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_launcher" 
+        android:layout_below="@id/hd_date_tv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/hd_more_btn"
+         android:layout_width="50dp"
+         android:layout_height="30dp"
+        android:background="@drawable/action_more" 
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>
